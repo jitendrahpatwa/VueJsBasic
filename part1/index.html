@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue app</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="apps">
+		{{ msg }}<br>
+		<input type="text" name="" v-model="msg"><br>
+		<ul>
+			<li v-for="todo in todos">{{ todo.task }}</li><br>
+		</ul><br>
+		<button v-on:click="dofor">Try to hit me</button>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
